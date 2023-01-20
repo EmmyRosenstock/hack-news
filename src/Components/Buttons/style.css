@@ -1,0 +1,47 @@
+.buttont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    overflow: hidden;
+  }
+  
+  .buttont input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+  }
+  
+  .buttont label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-text-color);
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border-radius: 2px;
+    border: solid 1px #d6d6d6;
+    transition: all 0.1s ease-in-out;
+    min-width: 98px;
+  }
+  
+  .buttont label:hover {
+    cursor: pointer;
+    color:#1797ff;
+  }
+  
+  .buttont input:checked + label {
+    color:#1797ff;
+    border: 1px solid var(--main-color);
+  }
+  
+  .buttont label:first-of-type {
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .buttont label:last-of-type {
+    border-radius: 0 2px 2px 0;
+  }
