@@ -2,6 +2,7 @@ import './style.css';
 import classnames from 'classnames';
 import { IPagination } from '../../api/pagination';
 import { DOTS, usePagination } from '../../hooks';
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export interface PaginationProps extends IPagination {
   className?: string;
@@ -38,7 +39,7 @@ export const Pagination = ({onPageChange, totalCount, siblingCount = 1, currentP
         })}
         onClick={onPrevious}
       >
-        <i className='bx bx-chevron-left bx-sm' />
+        <MdOutlineKeyboardArrowLeft />
       </li>
       {paginationRange.map( (pageNumber, index) => {
         if (pageNumber === DOTS) {
@@ -63,7 +64,7 @@ export const Pagination = ({onPageChange, totalCount, siblingCount = 1, currentP
         })}
         onClick={onNext}
       >
-        <i className='bx bx-chevron-right bx-sm' />
+        <MdOutlineKeyboardArrowRight />
       </li>
     </ul>
   );

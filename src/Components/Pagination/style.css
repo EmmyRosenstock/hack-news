@@ -2,6 +2,7 @@
     display: flex;
     list-style-type: none;
     user-select: none;
+    justify-content: center;
   }
   .pagination .pagination__item {
     height: 32px;
@@ -24,14 +25,14 @@
   }
   
   .pagination .pagination__item:hover {
-    background-color: var(--main-color);
+    background-color:#1890ff;
     opacity: 0.8;
     color: #fff;
     cursor: pointer;
   }
   
   .pagination .pagination__item.selected {
-    background-color: var(--main-color);
+    background-color: #1890ff;
     color: #fff;
   }
   

@@ -15,6 +15,7 @@
     width: 100%;
     text-decoration: none ;
     
+    
   }
   .card a{
     text-decoration: none;
@@ -40,6 +41,7 @@
     display: flex;
     justify-content: center;
     margin-top: 76px;
+    
   }
   
   /*md*/
